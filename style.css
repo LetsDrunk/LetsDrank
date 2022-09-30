@@ -1,0 +1,68 @@
+body {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(144, 25, 25, 1) 100%);
+  margin: 0px;
+  font-family: 'Oswald';
+  font-weight: 400;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+header {
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-weight: normal;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+img {
+  width: 100px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-info {
+  text-align: center;
+}
+.men {
+  animation: right 2s ease-in-out;
+}
+.women {
+  animation: left 2s ease-in-out;
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
