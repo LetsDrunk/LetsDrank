@@ -15,9 +15,15 @@ header {
 h1 {
   font-weight: normal;
 }
+h3 {
+  color: white;
+}
 main {
   display: flex;
+  height: 100vh;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 img {
